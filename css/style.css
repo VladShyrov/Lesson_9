@@ -1,0 +1,430 @@
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700");
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/Acrom-Thin.woff2") format("woff2"),
+    url("../fonts/Acrom-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* Стили обнуления */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/* размер для картинок */
+img {
+  max-width: 100%;
+}
+
+body {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 16%,
+    rgba(20, 209, 224, 1) 35%,
+    rgba(255, 247, 0, 0.9923319669664741) 73%
+  );
+}
+header {
+  font-family: lato;
+}
+.menu {
+  display: inline-block;
+  position: fixed;
+  margin: 0px 0px 0px 100px;
+  z-index: 11;
+}
+
+.menu li {
+  border-radius: 30px;
+  display: inline-block;
+  width: 200px;
+  list-style: none;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(42, 245, 0, 1) 98%
+  );
+  position: relative;
+  margin: 0px 30px 0px 0px;
+  text-transform: uppercase;
+  font-family: acrom;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+
+.menu a:hover {
+  border-radius: 30px;
+  background: #808291;
+}
+
+.menu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+.car {
+  position: relative;
+  max-width: 100%;
+  top: 0px;
+  padding-right: 100px;
+}
+.text {
+  font-family: Acrom;
+  padding: 35px;
+  display: block;
+  color: #5ffbf1;
+  text-align: center;
+  font-size: 58px;
+  font-weight: bold;
+  height: 30px;
+  text-transform: uppercase;
+}
+.tank {
+  width: 380px;
+  height: 150px;
+  position: absolute;
+  top: 300px;
+  left: 260px;
+  z-index: 3;
+  border: black 3px solid;
+  border-radius: 65px 65px 65px 65px;
+  background-color: yellow;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(245, 242, 0, 1) 54%
+  );
+}
+.luke {
+  width: 70px;
+  height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 285px;
+  left: 345px;
+  z-index: 10;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(245, 242, 0, 1) 54%
+  );
+}
+.luke_front {
+  width: 70px;
+  height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 285px;
+  left: 495px;
+  z-index: 10;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(245, 242, 0, 1) 54%
+  );
+}
+.trunk {
+  width: 270px;
+  height: 100px;
+  position: absolute;
+  top: 400px;
+  left: 300px;
+  z-index: 3;
+  border: black 3px solid;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 6%,
+    rgba(42, 245, 0, 1) 98%
+  );
+  background-color: green;
+}
+
+.car_body {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 300px;
+  left: 648px;
+  z-index: 3;
+  border: black 3px solid;
+  border-radius: 25px 80px 0px 0px / 25px 100px 0px 0px;
+  border-bottom: none;
+  background: rgb(0, 162, 255);
+}
+
+.sub-car_body {
+  width: 230px;
+  height: 100px;
+  position: absolute;
+  top: 400px;
+  left: 648px;
+  z-index: 3;
+  border: black 3px solid;
+  border-radius: 0px 30px 0px 0px / 0px 40px 0px 0px;
+  background: rgb(0, 162, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 8, 8, 1) 15%,
+    rgba(36, 173, 244, 1) 91%
+  );
+}
+
+.warp {
+  width: 600px;
+  height: 30px;
+  position: absolute;
+  top: 497px;
+  left: 290px;
+  z-index: 3;
+  border: #000 3px solid;
+  border-radius: 50px 50px 50px 50px;
+  background: black;
+}
+
+.rear_wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 470px;
+  left: 320px;
+  z-index: 10;
+  background: radial-gradient(
+    circle,
+    rgba(76, 77, 79, 1) 0%,
+    rgba(7, 7, 7, 1) 84%
+  );
+}
+
+.front_wheel {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 470px;
+  left: 700px;
+  z-index: 10;
+  background: radial-gradient(
+    circle,
+    rgba(76, 77, 79, 1) 0%,
+    rgba(7, 7, 7, 1) 84%
+  );
+}
+
+.rear_disc {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 500px;
+  left: 350px;
+  z-index: 10;
+  background: #fff;
+}
+
+.front_disc {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 500px;
+  left: 730px;
+  z-index: 10;
+  background: #fff;
+}
+.rear_cap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 515px;
+  left: 365px;
+  z-index: 10;
+  background: grey;
+}
+.front_cap {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black 3px solid;
+  position: absolute;
+  top: 515px;
+  left: 745px;
+  z-index: 10;
+  background: grey;
+}
+.headlight {
+  width: 15px;
+  height: 40px;
+  border: black 3px solid;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  top: 427px;
+  left: 876px;
+  z-index: 3;
+  background: rgb(199, 203, 204);
+}
+.glass {
+  width: 115px;
+  height: 85px;
+  position: absolute;
+  top: 310px;
+  left: 660px;
+  z-index: 3;
+  border: black 3px solid;
+  border-radius: 0px 60px 0px 0px / 0px 50px 0px 0px;
+  background: rgb(199, 203, 204);
+}
+.door_knob {
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  top: 415px;
+  left: 665px;
+  border: black 3px solid;
+  background: white;
+  z-index: 5;
+  border-radius: 0px 60px 0px 0px / 0px 50px 0px 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(8, 8, 8, 1) 15%,
+    rgba(36, 173, 244, 1) 91%
+  );
+}
+.stop {
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  top: 484px;
+  left: 273px;
+  border: black 3px solid;
+  border-radius: 25px;
+  background: red;
+  z-index: 10;
+}
+.rear_wing {
+  width: 120px;
+  height: 71px;
+  border: black 3px solid;
+  border-radius: 100px 100px 0px 0px;
+  position: absolute;
+  top: 457px;
+  left: 320px;
+  z-index: 5;
+  background: grey;
+}
+.front_wing {
+  width: 120px;
+  height: 71px;
+  border: black 3px solid;
+  border-radius: 100px 100px 0px 0px;
+  position: absolute;
+  top: 457px;
+  left: 700px;
+  z-index: 5;
+  background: grey;
+}
+.crane {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 428px;
+  left: 273px;
+  border: black 3px solid;
+  border-radius: 25px;
+  background: rgb(10, 10, 10);
+  z-index: 10;
+}
+.car:hover .headlight {
+  box-shadow: 15px 2px 15px 15px rgb(252, 161, 16);
+  background-color: yellow;
+}
+.car:hover .glass {
+  background: yellow 0px -20px;
+}
+.car:hover .stop {
+  border-radius: 25px;
+  box-shadow: -4px 2px 15px 9px rgb(252, 32, 16);
+}
+.footer {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 800px;
+  font-family: Acrom;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #ff0000;
+}
+.footer:hover {
+  color: #fff;
+  background: #000;
+}
